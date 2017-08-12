@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{54D70079-3BE8-433B-B29F-6A4089344B23}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Avoidance</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Josh\Documents\Visual Studio 2017\Projects\Avoidance\Avoidance\SFML-2.3.2\include;$(IncludePath)</IncludePath>
+    <ReferencePath>C:\Users\Josh\Documents\Visual Studio 2017\Projects\Avoidance\Avoidance\SFML-2.3.2\lib;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Josh\Documents\Visual Studio 2017\Projects\Avoidance\Avoidance\SFML-2.3.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\Josh\Documents\Visual Studio 2017\Projects\Avoidance\Avoidance\SFML-2.3.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-network-d.lib;sfml-audio-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AniBg.h" />
+    <ClInclude Include="AniT.h" />
+    <ClInclude Include="AniWall.h" />
+    <ClInclude Include="Ani_MOTHER.h" />
+    <ClInclude Include="App.h" />
+    <ClInclude Include="BackSplash_MOTHER.h" />
+    <ClInclude Include="Basic_Tile_MOTHER.h" />
+    <ClInclude Include="Bg.h" />
+    <ClInclude Include="Big_Squisher.h" />
+    <ClInclude Include="Blast.h" />
+    <ClInclude Include="BounceTile.h" />
+    <ClInclude Include="Break_Spawner.h" />
+    <ClInclude Include="BTM_temp.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Cam.h" />
+    <ClInclude Include="ChainBall.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Chest.h" />
+    <ClInclude Include="Choice.h" />
+    <ClInclude Include="ChoiceRTEXT.h" />
+    <ClInclude Include="Cloud.h" />
+    <ClInclude Include="Cloud_Spawner.h" />
+    <ClInclude Include="Cloud_Start.h" />
+    <ClInclude Include="Clown.h" />
+    <ClInclude Include="Com_Hand.h" />
+    <ClInclude Include="Com_MAIN.h" />
+    <ClInclude Include="ConstLight.h" />
+    <ClInclude Include="Corner.h" />
+    <ClInclude Include="CT.h" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="Dia.h" />
+    <ClInclude Include="Dino.h" />
+    <ClInclude Include="Door.h" />
+    <ClInclude Include="Dragon.h" />
+    <ClInclude Include="DText.h" />
+    <ClInclude Include="EBM.h" />
+    <ClInclude Include="Editor.h" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="Elevator.h" />
+    <ClInclude Include="Entrance.h" />
+    <ClInclude Include="Exit.h" />
+    <ClInclude Include="EyeBall.h" />
+    <ClInclude Include="EyeBall_MAIN.h" />
+    <ClInclude Include="FileConverter.h" />
+    <ClInclude Include="Flame.h" />
+    <ClInclude Include="FlameThrower.h" />
+    <ClInclude Include="FlickerLight.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="Foreground.h" />
+    <ClInclude Include="Gameover_Screen.h" />
+    <ClInclude Include="Gauntlets.h" />
+    <ClInclude Include="GF.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="HomingSkull.h" />
+    <ClInclude Include="Hurts.h" />
+    <ClInclude Include="IM_temp.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="InvisibleWall.h" />
+    <ClInclude Include="Invisible_MOTHER.h" />
+    <ClInclude Include="IPTile.h" />
+    <ClInclude Include="Itemids.h" />
+    <ClInclude Include="I_Projectile.h" />
+    <ClInclude Include="Laser.h" />
+    <ClInclude Include="Light_MOTHER.h" />
+    <ClInclude Include="Misc_Sprites.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="MusicPlayer.h" />
+    <ClInclude Include="NPC_MOTHER.h" />
+    <ClInclude Include="NPC_Spawner.h" />
+    <ClInclude Include="NPC_temp.h" />
+    <ClInclude Include="ParticleSettings.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="PText.h" />
+    <ClInclude Include="PTile.h" />
+    <ClInclude Include="P_Fog.h" />
+    <ClInclude Include="P_Spawner_Const.h" />
+    <ClInclude Include="P_Switch.h" />
+    <ClInclude Include="P_Switch_MAIN.h" />
+    <ClInclude Include="P_Tint.h" />
+    <ClInclude Include="random2.h" />
+    <ClInclude Include="Rock.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="RT.h" />
+    <ClInclude Include="RTile.h" />
+    <ClInclude Include="SaveStation.h" />
+    <ClInclude Include="Scoring.h" />
+    <ClInclude Include="Screen_Credits.h" />
+    <ClInclude Include="Screen_MOTHER.h" />
+    <ClInclude Include="Screen_Pause.h" />
+    <ClInclude Include="Screen_Start.h" />
+    <ClInclude Include="Seal.h" />
+    <ClInclude Include="Shielder.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="Sign.h" />
+    <ClInclude Include="Skeleton.h" />
+    <ClInclude Include="Slime.h" />
+    <ClInclude Include="SnowClouds.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SoundBlock.h" />
+    <ClInclude Include="Space.h" />
+    <ClInclude Include="Squisher.h" />
+    <ClInclude Include="ST.h" />
+    <ClInclude Include="Stair.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="Sub_NPC_A.h" />
+    <ClInclude Include="Sub_NPC_A_temp.h" />
+    <ClInclude Include="Sub_NPC_Block.h" />
+    <ClInclude Include="Sub_NPC_CD.h" />
+    <ClInclude Include="Sub_NPC_StaticCollision.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Teleporter.h" />
+    <ClInclude Include="Temporarytxt.h" />
+    <ClInclude Include="TempText.h" />
+    <ClInclude Include="TileMap.h" />
+    <ClInclude Include="TripleChest.h" />
+    <ClInclude Include="T_MOTHER.h" />
+    <ClInclude Include="Wall.h" />
+    <ClInclude Include="Weather.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="W_bomb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AniBg.cpp" />
+    <ClCompile Include="AniT.cpp" />
+    <ClCompile Include="AniWall.cpp" />
+    <ClCompile Include="Ani_MOTHER.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="Avoidance.cpp" />
+    <ClCompile Include="BackSplash_MOTHER.cpp" />
+    <ClCompile Include="Basic_Tile_MOTHER.cpp" />
+    <ClCompile Include="Bg.cpp" />
+    <ClCompile Include="Big_Squisher.cpp" />
+    <ClCompile Include="Blast.cpp" />
+    <ClCompile Include="BounceTile.cpp" />
+    <ClCompile Include="Break_Spawner.cpp" />
+    <ClCompile Include="BTM_temp.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Cam.cpp" />
+    <ClCompile Include="ChainBall.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="Chest.cpp" />
+    <ClCompile Include="Choice.cpp" />
+    <ClCompile Include="ChoiceRTEXT.cpp" />
+    <ClCompile Include="Cloud.cpp" />
+    <ClCompile Include="Cloud_Spawner.cpp" />
+    <ClCompile Include="Cloud_Start.cpp" />
+    <ClCompile Include="Clown.cpp" />
+    <ClCompile Include="Com_Hand.cpp" />
+    <ClCompile Include="Com_MAIN.cpp" />
+    <ClCompile Include="ConstLight.cpp" />
+    <ClCompile Include="Corner.cpp" />
+    <ClCompile Include="CT.cpp" />
+    <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="Dia.cpp" />
+    <ClCompile Include="Dino.cpp" />
+    <ClCompile Include="Door.cpp" />
+    <ClCompile Include="Dragon.cpp" />
+    <ClCompile Include="DText.cpp" />
+    <ClCompile Include="EBM.cpp" />
+    <ClCompile Include="Editor.cpp" />
+    <ClCompile Include="Effects.cpp" />
+    <ClCompile Include="Elevator.cpp" />
+    <ClCompile Include="Entrance.cpp" />
+    <ClCompile Include="Exit.cpp" />
+    <ClCompile Include="EyeBall.cpp" />
+    <ClCompile Include="EyeBall_MAIN.cpp" />
+    <ClCompile Include="FileConverter.cpp" />
+    <ClCompile Include="Flame.cpp" />
+    <ClCompile Include="FlameThrower.cpp" />
+    <ClCompile Include="FlickerLight.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Foreground.cpp" />
+    <ClCompile Include="Gameover_Screen.cpp" />
+    <ClCompile Include="Gauntlets.cpp" />
+    <ClCompile Include="GF.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="HomingSkull.cpp" />
+    <ClCompile Include="Hurts.cpp" />
+    <ClCompile Include="IM_temp.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="InvisibleWall.cpp" />
+    <ClCompile Include="Invisible_MOTHER.cpp" />
+    <ClCompile Include="IPTile.cpp" />
+    <ClCompile Include="Itemids.cpp" />
+    <ClCompile Include="I_Projectile.cpp" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="Light_MOTHER.cpp" />
+    <ClCompile Include="Misc_Sprites.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="MusicPlayer.cpp" />
+    <ClCompile Include="NPC_MOTHER.cpp" />
+    <ClCompile Include="NPC_Spawner.cpp" />
+    <ClCompile Include="NPC_temp.cpp" />
+    <ClCompile Include="ParticleSettings.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="PText.cpp" />
+    <ClCompile Include="PTile.cpp" />
+    <ClCompile Include="P_Fog.cpp" />
+    <ClCompile Include="P_Spawner_Const.cpp" />
+    <ClCompile Include="P_Switch.cpp" />
+    <ClCompile Include="P_Switch_MAIN.cpp" />
+    <ClCompile Include="P_Tint.cpp" />
+    <ClCompile Include="random2.cpp" />
+    <ClCompile Include="Rock.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="RT.cpp" />
+    <ClCompile Include="RTile.cpp" />
+    <ClCompile Include="SaveStation.cpp" />
+    <ClCompile Include="Scoring.cpp" />
+    <ClCompile Include="Screen_Credits.cpp" />
+    <ClCompile Include="Screen_MOTHER.cpp" />
+    <ClCompile Include="Screen_Pause.cpp" />
+    <ClCompile Include="Screen_Start.cpp" />
+    <ClCompile Include="Seal.cpp" />
+    <ClCompile Include="Shielder.cpp" />
+    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="Sign.cpp" />
+    <ClCompile Include="Skeleton.cpp" />
+    <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="SnowClouds.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SoundBlock.cpp" />
+    <ClCompile Include="Space.cpp" />
+    <ClCompile Include="Squisher.cpp" />
+    <ClCompile Include="ST.cpp" />
+    <ClCompile Include="Stair.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Stream.cpp" />
+    <ClCompile Include="Sub_NPC_A.cpp" />
+    <ClCompile Include="Sub_NPC_A_temp.cpp" />
+    <ClCompile Include="Sub_NPC_Block.cpp" />
+    <ClCompile Include="Sub_NPC_CD.cpp" />
+    <ClCompile Include="Sub_NPC_StaticCollision.cpp" />
+    <ClCompile Include="Teleporter.cpp" />
+    <ClCompile Include="Temporarytxt.cpp" />
+    <ClCompile Include="TempText.cpp" />
+    <ClCompile Include="TileMap.cpp" />
+    <ClCompile Include="TripleChest.cpp" />
+    <ClCompile Include="T_MOTHER.cpp" />
+    <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="Weather.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="W_bomb.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
